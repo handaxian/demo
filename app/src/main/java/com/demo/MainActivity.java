@@ -66,7 +66,11 @@ public class MainActivity extends AppCompatActivity {
                         .show(MainActivity.this, 2000);
                 break;
             case R.id.btn2:
-                LemonBubble.showError(MainActivity.this, "这是一个失败的提示", 2000);
+//                LemonBubble.showError(MainActivity.this, "这是一个失败的提示", 2000);
+                LemonBubble.getErrorBubbleInfo()
+                        .setTitle("这是一个失败的提示")
+                        .setTitleFontSize(15)
+                        .show(MainActivity.this, 2000);
                 break;
             case R.id.btn3:
 //                LemonBubble.showRoundProgress(MainActivity.this, "请求中...");
@@ -79,6 +83,7 @@ public class MainActivity extends AppCompatActivity {
 
                 LemonBubble.getRoundProgressBubbleInfo()
                         .setTitle("无限请求中...")
+                        .setTitleFontSize(19)
                         .setOnMaskTouchContext(new LemonBubbleMaskOnTouchContext() {
                             @Override
                             public void onTouch(LemonBubbleInfo bubbleInfo, LemonBubbleView bubbleView) {
@@ -149,6 +154,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent2);
                 break;
             case R.id.btn9:
+                Intent intent3 = new Intent(MainActivity.this, Demo_AlertView.class);
+                startActivity(intent3);
                 break;
             case R.id.btn10:
                 break;

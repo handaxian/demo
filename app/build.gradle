@@ -41,5 +41,6 @@ dependencies {
     compile 'com.github.mcxtzhang:AnimShopButton:V1.0.0'
     //Adapter终结者 地址：https://github.com/mcxtzhang/all-base-adapter
     compile 'com.github.mcxtzhang:all-base-adapter:V1.4.0'
+    compile 'com.bigkoo:alertview:1.0.3'
 
 }
